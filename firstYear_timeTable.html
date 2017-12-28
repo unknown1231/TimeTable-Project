@@ -1,0 +1,216 @@
+<html>
+<style>
+  body{
+    background-color: #e05915;
+    color: #1d2120;
+  }
+table, th, td{
+  border: 1px solid black;
+  text-align: center;
+}
+
+#timeTable{
+  background-color: #1d2120;
+  color: white;
+}
+
+/*
+#day1:hover{
+  background-color: red;
+}
+#lunch:hover{
+  background-color: blue;
+}
+
+#day2:hover{
+  background-color: green;
+}
+
+#day3:hover{
+  background-color: blue;
+}
+
+#day4:hover{
+  background-color: #6ed3cf;
+}
+
+#day5:hover{
+  background-color: #9068be;
+}
+
+#day6:hover{
+  background-color: #173e43;
+}
+*/
+#timing:hover{
+  background-color: #667467;
+}
+#teacherInfo{
+  background-color: #1d2120;
+  color: white;
+}
+</style>
+<head>
+  <h1><u>1<sup>st</sup>Year Time Table:-</u></h1>
+</head>
+
+<table style="width:100%" id="timeTable">
+  <tr id="timing">
+    <th>Day</th>
+    <td>8:50-9:40am</td>
+    <td>9:40-10:30am</td>
+    <td>10:30-11:20am</td>
+    <td>11:20-12:10pm</td>
+    <td>12:10-12:50pm</td>
+    <td>12:50-1:40pm</td>
+    <td>1:40-2:30pm</td>
+    <td>2:30-3:20pm</td>
+  </tr>
+
+  <tr id="day1">
+    <th>Monday</th>
+    <td><aabr title="Basic Electrical Engineering">BEE</aabr></td>
+    <td><aabr title="Psychology">PSY</aabr></td>
+    <td><aabr title="Mathematical Methods">MM</aabr></td>
+    <td><aabr title="Philosophy">PHIL</aabr></td>
+    <td rowspan="6" id="lunch">L<br>U<br>N<br>C<br>H<br></td>
+    <td colspan="3"><aabr title="ELCS Lab">ELCS Lab</aabr></td>
+  </tr>
+
+  <tr id="day2">
+    <th>Tuesday</th>
+    <td><aabr title="Psychology">PSY</aabr></td>
+    <td><aabr title="Basic Electrical Engineering">BEE</aabr></td>
+    <td colspan="2"><aabr title="Mathematical Methods">MM</aabr></td>
+    <td colspan="2"><aabr title="Philosophy">PHIL</aabr></td>
+    <td><aabr title="Library">LIB</aabr></td>
+  </tr>
+
+  <tr id="day3">
+    <th>Wednesday</th>
+    <td><aabr title="Basic Electrical Engineering">BEE</aabr></td>
+    <td colspan="3"><aabr title="CP Lab2">CP Lab2</aabr></td>
+    <td colspan="3"><aabr title="Engineering Physics">EP</aabr></td>
+  </tr>
+
+  <tr id="day4">
+    <th>Thursday</th>
+    <td><aabr title="Philosophy">PHIL</aabr></td>
+    <td colspan="2"><aabr title="Mathematical Methods">MM</aabr></td>
+    <td><aabr title="Psychology">PSY</aabr></td>
+    <td colspan="3"><aabr title="Engineering Physics Lab">EP Lab</aabr></td>
+  </tr>
+
+  <tr id="day5">
+    <th>Friday</th>
+    <td><aabr title="Mathematical Methods">MM</aabr></td>
+    <td colspan="2"><aabr title="Basic Electrical Engineering">BEE</aabr></td>
+    <td><aabr title="Library">LIB</aabr></td>
+    <td colspan="3"><aabr title="CP Lab2">CP Lab2</aabr></td>
+  </tr>
+
+  <tr id="day6">
+    <th>Saturday</th>
+    <td><aabr title="Psychology">PSY</aabr></td>
+    <td colspan="3"><aabr title="ELCS Lab">ELCS Lab</aabr></td>
+    <td><aabr title="Mathematical Methods">MM</aabr></td>
+    <td colspan="2">Sports</td>
+  </tr>
+</table>
+<br>
+<table style="width:100%" id="teacherInfo">
+  <tr>
+    <th>SNO</th>
+    <th>Subject abbr</th>
+    <th>Subject</th>
+    <th>Faculty</th>
+    <th>No. of Periods/Weeks</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>MM</td>
+    <td>Mathematical Methods</td>
+    <td>Mrs.K.Rajya Laxmi</td>
+    <td>7</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>EP</td>
+    <td>Engineering Physics</td>
+    <td>Mr.K.Venu Gopal</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>PSY</td>
+    <td>Introduction to Psychology</td>
+    <td>Dr.Pankojini Mulia</td>
+    <td>4</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>PHIL</td>
+    <td>Introduction to Philosophy</td>
+    <td>Dr.Pankojini Mulia</td>
+    <td>4</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>BEE</td>
+    <td>Basic Electrical Engineering</td>
+    <td>Dr.G.Prasad</td>
+    <td>5</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>EP Lab</td>
+    <td>Engineering Physics Lab</td>
+    <td>Mr.K.Venu Gopal</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+   <td>7</td>
+   <td>ELCS</td>
+   <td>ELCS</td>
+   <td>DR.Sandeep Patil</td>
+   <td>3</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td>CP Lab2</td>
+    <td>CP Lab2</td>
+    <td>DR.P.Hari Krishna/Mr. Satish</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td>Sports</td>
+    <td>Sports</td>
+    <td>---------</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td>LIB</td>
+    <td>Library</td>
+    <td>---------</td>
+    <td>1</td>
+  </tr>
+
+  <tr>
+    <th colspan="4">Total</th>
+    <td>42</td>
+  </tr>
+
+</table>
+</html>
