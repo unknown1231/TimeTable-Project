@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demoo"></p>
+<script>
+var index=0;
+var endTime=[
+{hours :8,min:50},
+{hours :9,min:40},
+{hours :10,min:30},
+{hours :11,min:20},
+{hours :12,min:10},
+{hours :12,min:50},
+{hours :13,min:40},
+{hours :14,min:30},
+{hours :15,min:20}
+];
+
+setInterval(function getRemainingTime(){
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log(endTime);
+var presentHours = today.getHours();
+var presentMin = today.getMinutes();
+for( index=0;index<endTime.length;index++)
+{
+	if(endTime[index].hours >=presentHours)
+    {	
+		if(endTime[index].min < presentMin)
+		{	
+			continue;
+		}
+		break;
+	}
+}
+console.log(index);
+console.log(endTime[index]);
+var hours = endTime[index].hours-today.getHours();
+var min = endTime[index].min-today.getMinutes();
+var sec = 59-today.getSeconds();
+document.getElementById("demo").innerHTML = time;
+document.getElementById("demoo").innerHTML = hours+":"+min+":"+sec;
+},1000);
+</script>
+
+</body>
+</html>
