@@ -1,0 +1,44 @@
+<html>
+<style>
+.container {
+  background: url("time_old.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 110%;
+  height: 110%;
+  text-align: center;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  -webkit-filter: blur(5px) brightness(0.3);
+  -moz-filter: blur(5px) brightness(0.3);
+  -ms-filter: blur(5px) brightness(0.3);
+  -o-filter: blur(5px) brightness(0.3);
+  filter: blur(5px) brightness(0.3);
+   position: fixed;
+  left: -5%;
+  top: -5%;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: 0;
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+
+}
+#text{
+color:white;
+}
+</style>
+<body>
+<div class="container">
+<div class="content">
+</div>
+</div>
+</body>
+</html>

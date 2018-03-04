@@ -1,0 +1,101 @@
+<html>
+<style>
+body{
+  background: url("time_old.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 110%;
+  height: 110%;
+  text-align: center;
+  }
+
+table, th, td{
+color: #fff;
+border: 2px solid #fff;
+ border-color: rgba(255, 255, 255, 0.4);
+text-align: center;
+margin-top: 50px;
+}
+
+#timeTable{
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+height: 50%;
+}
+</style>
+
+<table style="width:100%" id="timeTable">
+  <tr id="timing">
+    <th>Day</th>
+    <td>8:50-9:40am</td>
+    <td>9:40-10:30am</td>
+    <td>10:30-11:20am</td>
+    <td>11:20-12:10pm</td>
+    <td>12:10-12:50pm</td>
+    <td>12:50-1:40pm</td>
+    <td>1:40-2:30pm</td>
+    <td>2:30-3:20pm</td>
+  </tr>
+
+  <tr id="day1">
+    <th>Monday</th>
+    <td><aabr title="Compiler Design">CD</aabr></td>
+    <td><aabr title="Distributed Systems">DS</aabr></td>
+    <td><aabr title="Distributed Systems">DS</aabr></td>
+    <td><aabr title="Information Security">IS</aabr></td>
+    <td rowspan="6" id="lunch">L<br>U<br>N<br>C<br>H<br></td>
+    <td><aabr title="Web Technologies">WT</aabr></td>
+    <td><aabr title="Web Technologies">WT</aabr></td>
+    <td><aabr title="Principles Programming Language">PPL</aabr></td>
+  </tr>
+
+  <tr id="day2">
+    <th>Tuesday</th>
+    <td><aabr title="Principles Programming Language">PPL</aabr></td>
+    <td><aabr title="Distributed Systems">DS</aabr></td>
+    <td><aabr title="Distributed Systems">DS</aabr></td>
+    <td><aabr title="Object Oriented Analysis and Design">OOAD</aabr></td>
+    <td colspan="3"><aabr title="Public Speaking Lab">PS Lab</aabr></td>
+  </tr>
+
+  <tr id="day3">
+    <th>Wednesday</th>
+    <td><aabr title="Distributed Systems">DS</aabr></td>
+    <td><aabr title="Compiler Design">CD</aabr></td>
+    <td><aabr title="Compiler Design">CD</aabr></td>
+    <td><aabr title="Principles Programming Language">PPL</aabr></td>
+    <td><aabr title="Object Oriented Analysis and Design">OOAD</aabr></td>
+    <td colspan="2">Sports/Library</td>
+  </tr>
+
+  <tr id="day4">
+    <th>Thursday</th>
+    <td><aabr title="Information Security">IS</aabr></td>
+    <td><aabr title="Information Security">IS</aabr></td>
+    <td><aabr title="Web Technologies">WT</aabr></td>
+    <td><aabr title="Web Technologies">WT</aabr></td>
+    <td colspan="3"><aabr title="Web Technologies Lab/Case Tools Lab">WT/Case Tools Lab</aabr></td>
+  </tr>
+
+  <tr id="day5">
+    <th>Friday</th>
+    <td><aabr title="Object Oriented Analysis and Design">OOAD</aabr></td>
+    <td><aabr title="Principles Programming Language">PPL</aabr></td>
+    <td><aabr title="Compiler Design">CD</aabr></td>
+    <td><aabr title="Object Oriented Analysis and Design">OOAD</aabr></td>
+    <td><aabr title="Web Technologies">WT</aabr></td>
+    <td><aabr title="Information Security">IS</aabr></td>
+    <td>Activities</td>
+  </tr>
+
+  <tr id="day6">
+    <th>Saturday</th>
+    <td><aabr title="Compiler Design">CD</aabr></td>
+    <td><aabr title="Information Security">IS</aabr></td>
+    <td><aabr title="Principles Programming Language">PPL</aabr></td>
+    <td><aabr title="Object Oriented Analysis and Design">OOAD</aabr></td>
+    <td colspan="3">Sports</td>
+  </tr>
+</table>
