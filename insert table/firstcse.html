@@ -1,0 +1,189 @@
+<html>
+
+<!-- this script is for creating first year cse time table
+it is connected to firstcse_db.php -->
+<!-- there are some other comments too, some make sense, some don't. feel free to look at them -->
+<style>
+.container {
+  background: url("time_old.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  -webkit-filter: blur(1px) brightness(0.3);
+  -moz-filter: blur(1px) brightness(0.3);
+  -ms-filter: blur(1px) brightness(0.3);
+  -o-filter: blur(1px) brightness(0.3);
+  filter: blur(1px) brightness(0.3);
+   position: fixed;
+  left: -5%;
+  top: -5%;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: 0;
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+
+}
+
+table, th, td{
+
+color: #fff;
+border: 2px solid #fff;
+border-color: rgba(255, 255, 255, 0.4);
+text-align: center;
+margin-top: 100px;
+padding: 2px;
+}
+td{
+  width:100px;
+}
+th{
+  width:100px;
+}
+#timeTable{
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+#submit{
+  text-align: center;
+  display: inline-block;
+   width: 130px;
+   padding: 8px;
+   color: #fff;
+   border-color: rgba(255, 255, 255, 0.4);
+   transition: background-color 0.2s ease-out,
+               border-color 0.2s ease-out;
+ }
+ input{
+    color: #fff;
+   	font : normal 10pt Verdana, Helvetica, Arial;
+   	background : none;
+   	border : none;
+    width: 130px;
+ }
+ h1{
+   color: #fff;
+   border: 2px solid #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+   text-align: center;
+   margin-top: 1px;
+ }
+</style>
+<body>
+<div class="container">
+<div class="content">
+<head>
+  <h1><u>Create Time Table</u></h1>
+</head>
+<table id="timeTable" style="width:100%" >
+  <form method="post" action="firstcse_db.php">
+  <tr class="noDrop">
+    <th>Day</th>
+    <th>8:50-9:40am</th>
+    <th>9:40-10:30am</th>
+    <th>10:30-11:20am</th>
+    <th>11:20-12:10pm</th>
+    <th>12:10-12:50pm</th>
+    <th>12:50-1:40pm</th>
+    <th>1:40-2:30pm</th>
+    <th>2:30-3:20pm</td>
+  </tr>
+  <tr id="day1">
+    <th>Monday</th>
+    <td><input type="text" name="period11"></td>
+    <td><input type="text" name="period12"></td>
+    <td><input type="text" name="period13"></td>
+    <td><input type="text" name="period14"></td>
+    <td rowspan="6" id="lunch">L<br>U<br>N<br>C<br>H<br></td>
+    <td><input type="text" name="period15"></td>
+    <td><input type="text" name="period16"></td>
+    <td><input type="text" name="period17"></td>
+  </tr>
+  <tr id="day2">
+    <th>Tuesday</th>
+    <td><input type="text" name="period21"></td>
+    <td><input type="text" name="period22"></td>
+    <td><input type="text" name="period23"></td>
+    <td><input type="text" name="period24"></td>
+    <td><input type="text" name="period25"></td>
+    <td><input type="text" name="period26"></td>
+    <td><input type="text" name="period27"></td>
+  </tr>
+  <tr id="day3">
+    <th>Wednesday</th>
+    <td><input type="text" name="period31"></td>
+    <td><input type="text" name="period32"></td>
+    <td><input type="text" name="period33"></td>
+    <td><input type="text" name="period34"></td>
+    <td><input type="text" name="period35"></td>
+    <td><input type="text" name="period36"></td>
+    <td><input type="text" name="period37"></td>
+  </tr>
+  <tr id="day4">
+    <th>Thursday</th>
+    <td><input type="text" name="period41"></td>
+    <td><input type="text" name="period42"></td>
+    <td><input type="text" name="period43"></td>
+    <td><input type="text" name="period44"></td>
+    <td><input type="text" name="period45"></td>
+    <td><input type="text" name="period46"></td>
+    <td><input type="text" name="period47"></td>
+  </tr>
+  <tr id="day5">
+    <th>Friday</th>
+    <td><input type="text" name="period51"></td>
+    <td><input type="text" name="period52"></td>
+    <td><input type="text" name="period53"></td>
+    <td><input type="text" name="period54"></td>
+    <td><input type="text" name="period55"></td>
+    <td><input type="text" name="period56"></td>
+    <td><input type="text" name="period57"></td>
+  </tr>
+  <tr id="day6">
+    <th>Saturday</th>
+    <td><input type="text" name="period61"></td>
+    <td><input type="text" name="period62"></td>
+    <td><input type="text" name="period63"></td>
+    <td><input type="text" name="period64"></td>
+    <td><input type="text" name="period65"></td>
+    <td><input type="text" name="period66"></td>
+    <td><input type="text" name="period67"></td>
+  </tr>
+  <tr>
+  <td><input type="submit" name="submit" value="insert" id="submit" onclick="myFunction()">
+  <td colspan="8">Enter text in the Fields and click <u>INSERT</u> box</td>
+  </tr>
+</form>
+</table>
+<!--
+<br>
+<ul>
+<li><p id="drag1" draggable="true" ondragstart="drag(event)" width="30" height="10">WT</p></li>
+<li><p id="drag2" draggable="true" ondragstart="drag(event)" width="30" height="10">DS</p></li>
+<li><p id="drag3" draggable="true" ondragstart="drag(event)" width="30" height="10">OOAD</p></li>
+<li><p id="drag4" draggable="true" ondragstart="drag(event)" width="30" height="10">CD</p></li>
+<li><p id="drag5" draggable="true" ondragstart="drag(event)" width="30" height="10">IS</p></li>
+<li><p id="drag6" draggable="true" ondragstart="drag(event)" width="30" height="10">PPL</p></li>
+<li><p id="drag7" draggable="true" ondragstart="drag(event)" width="30" height="10">PS</p></li>
+<li><p id="drag8" draggable="true" ondragstart="drag(event)" width="30" height="10">WT Lab</p></li>
+<li><p id="drag9" draggable="true" ondragstart="drag(event)" width="30" height="10">PS Lab</p></li>
+</ul>
+-->
+</div>
+</div>
+</body>
+</html>
